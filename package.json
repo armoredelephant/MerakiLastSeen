@@ -1,0 +1,16 @@
+{
+  "name": "meraki_subnets",
+  "version": "1.0.0",
+  "description": "scrpts to find available subnets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js network_list.csv"
+  },
+  "author": "keith alleman",
+  "license": "MIT",
+  "dependencies": {
+    "csv-parser": "^2.3.2",
+    "csv-writer": "^1.6.0"
+  }
+}
