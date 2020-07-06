@@ -33,32 +33,24 @@ const availNetworks = async filePath => {
         let templateRange = parseInt(range[0]);
         switch (!!templateRange) {
           case templateRange >= 160 && templateRange <= 191:
-            template = "DAL";
-            break;
+            return template = "DAL";
           case templateRange >= 192 && templateRange <= 243:
-            template = "DAL";
-            break;
+            return template = "DAL";
           case templateRange >= 128 && templateRange <= 159:
-            template = "ATL";
-            break;
+            return template = "ATL";
           case templateRange >= 224 && templateRange <= 254:
-            template = "ATL";
-            break;
+            return template = "ATL";
           case templateRange >= 104 && templateRange <= 111:
-            template = "ATL_MX64";
-            break;
+            return template = "ATL_MX64";
           case templateRange >= 112 && templateRange <= 119:
-            template = "ATL_MX64_2";
-            break;
+            return template = "ATL_MX64_2";
           case templateRange >= 24 && templateRange <= 27:
-            template = "ATL_MX64";
-            break;
+            return template = "ATL_MX64";
           case templateRange >= 28 && templateRange <= 31:
-            template = "ATL_MX64_2";
-            break;
+            return template = "ATL_MX64_2";
           default:
-            template = `NO_ASSIGNABLE_TEMPLATE`;
             console.log(`No assignable template for ${data.columnOne}`);
+            return template = `NO_ASSIGNABLE_TEMPLATE`;
         }
         subnets.push({
           template: template,
